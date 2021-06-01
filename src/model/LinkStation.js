@@ -2,7 +2,7 @@
 /**
  * Class to represent a LinkStation that powers devices.
  * @author Ville Lohkovuori
- * (06/2020)
+ * (06/2021)
  */
  class LinkStation {
 

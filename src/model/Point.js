@@ -2,7 +2,7 @@
 /**
  * Class to represent a Point.
  * @author Ville Lohkovuori
- * (06/2020)
+ * (06/2021)
  */
  class Point {
 
