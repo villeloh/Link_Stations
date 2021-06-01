@@ -4,7 +4,8 @@
 
 A simple app to calculate which Link Station provides the most power (if any) to a given point (x, y).
 
-The equation that is used for the power calculation is the following:\
+The equation that is used for the power calculation is the following:
+
 power = (reach - distance from linkstation)^2\
 if distance > reach, power = 0
 
@@ -14,7 +15,7 @@ You can view the app at [PLACEHOLDER_ADDRESS](PLACEHOLDER_ADDRESS)
 
 ## Run the App locally
 
-For local running, you will first need to install Node.js (latest version should be good; for creation, I used 14.17.0).\
+For local running, you will first need to install Node.js (latest version should be good; for creation, I used 14.17.0).
 
 With Node installed, you can run the following commands in the project folder (using a terminal on Mac or Linux, or a shell like Git Bash on Windows):
 
