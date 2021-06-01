@@ -11,7 +11,7 @@ if distance > reach, power = 0
 
 ## View the App
 
-You can view the app at [PLACEHOLDER_ADDRESS](PLACEHOLDER_ADDRESS)
+You can view the app [here](https://master.dyrt747cxe2nj.amplifyapp.com/)
 
 ## Run the App locally
 
