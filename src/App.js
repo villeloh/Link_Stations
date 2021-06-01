@@ -36,16 +36,12 @@ function App() {
     if (maxPowerStation) {
 
       topStationListItems.push(<li>Best link station for point <strong>( {point.x}, {point.y} )</strong> is the station at <strong>( {maxPowerStation.x}, {maxPowerStation.y} )</strong> with power <strong>{maxPower.toFixed(2)}</strong></li>);
-
-
-      console.log(`Best link station for point ( ${point.x}, ${point.y} ) is the station at ( ${maxPowerStation.x}, ${maxPowerStation.y} ) with power ${maxPower.toPrecision(2)}`);
     } else {
       topStationListItems.push(<li>No link station within reach for point <strong>( {point.x}, {point.y} )</strong></li>);
-      console.log(`No link station within reach for point (${point.x}, ${point.y})`);
     }
   });
 
-  // const topStationlistItems = topStationStrings.map((str, index) =>  <li key={index}>{str}</li>);
+  // This is not the most ideal way to deal with visuals, but the list items and <strong> tags were easy & quick to do
   const linkStationListItems = linkStations.map((station, index) => <li key={index}>Station #{index+1}: <strong>( x: {station.x}, y: {station.y}, reach: {station.reach} )</strong></li>);
   const pointListItems = points.map((point, index) => <li key={index}>Point #{index+1}: <strong>( x: {point.x}, y: {point.y} )</strong></li>);
 
