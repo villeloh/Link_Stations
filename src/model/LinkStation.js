@@ -1,11 +1,9 @@
-
 /**
  * Class to represent a LinkStation that powers devices.
  * @author Ville Lohkovuori
  * (06/2021)
  */
- class LinkStation {
-
+class LinkStation {
   /**
    * Create a LinkStation.
    * @param {number} x - x coordinate
@@ -13,7 +11,6 @@
    * @param {number} reach - distance to which the LinkStation provides power
    */
   constructor(x, y, reach) {
-
     this.x = x;
     this.y = y;
     this.reach = reach;
@@ -26,10 +23,9 @@
    * @return {number} power - the provided power
    */
   powerAt(x, y) {
+    const deviceDistance = Math.sqrt((this.x - x) ** 2 + (this.y - y) ** 2);
 
-    const deviceDistance = Math.sqrt((this.x - x)**2 + (this.y - y)**2);
-
-    return deviceDistance > this.reach ? 0 : (this.reach - deviceDistance)**2;
+    return deviceDistance > this.reach ? 0 : (this.reach - deviceDistance) ** 2;
   }
 }
 
